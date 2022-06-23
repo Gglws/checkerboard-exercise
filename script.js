@@ -7,20 +7,20 @@ for(var i = 0; i < 81; i++){
     tile.style.paddingBottom = '11.1%';
     tile.style.float = 'left';
 
-    i % 2 === 0 ? tile.style.background = 'black': tile.style.background = 'red';
-    // tile.style.background = getColor();
+    // i % 2 === 0 ? tile.style.background = 'black': tile.style.background = 'red';
+    tile.style.background = getColor();
 
     document.body.append(tile);
 }
 
-// function getColor(){
+function getColor(){
 
-//     const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
-//     const r = randomBetween(0, 255);
-//     const g = randomBetween(0, 255);
-//     const b = randomBetween(0, 255);
+    const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+    const r = randomBetween(0, 255);
+    const g = randomBetween(0, 255);
+    const b = randomBetween(0, 255);
 
-//     var color = 'rgb('+r+','+g+','+b+')'
+    var color = 'rgb('+r+','+g+','+b+')'
 
-//     return color;
-// }
+    return color;
+}
